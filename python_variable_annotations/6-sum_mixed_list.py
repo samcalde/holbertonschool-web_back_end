@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+
 from typing import Union, List
+
 
 """
 sum_mixed_list type-annotated function

@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+
 from typing import List
+
 
 """
 sum_list type-annotated function

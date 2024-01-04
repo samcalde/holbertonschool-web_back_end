@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+
 from typing import Callable
+
 
 """
 make_multiplier type-annotated function
