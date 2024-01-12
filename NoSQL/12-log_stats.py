@@ -4,13 +4,13 @@
 Provides some stats about Nginx logs stored in MongoDB
 """
 
-from pymongo import MongoClient
-
 
 if __name__ == "__main__":
+    from pymongo import MongoClient
+
+    
     client = MongoClient('mongodb://127.0.0.1:27017')
-    mongo_db = client["logs"]
-    collection = mongo_db["nginx"]
+    collection = client.logs.nginx
     log_amount = collection.count_documents()
     print(f"{log_amount} logs")
     print("Methods:")
