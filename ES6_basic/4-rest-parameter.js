@@ -1,6 +1,6 @@
-export default function returnHowManyArguments(...arguments) {
+export default function returnHowManyArguments(...argv) {
   var i = 0;
-  for (argument in arguments) {
+  for (const argument of argv) {
     i++;
   }
   return i;
