@@ -1,8 +1,12 @@
 export default function getListStudentIds(objectList) {
-  const idArray = objectList.map((object) => {
-    if (object.id) {
-      return object.id;
-    }
-  })
-  return (idArray);
+  if (Array.isArray(objectList)) {
+    const idArray = objectList.map((object) => {
+      if (object.id) {
+        return object.id;
+      }
+    })
+    return (idArray);
+  } else {
+    return ([])
+  }
 }
