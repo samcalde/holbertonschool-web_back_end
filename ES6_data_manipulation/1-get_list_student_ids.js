@@ -6,5 +6,7 @@ export default function getListStudentIds(objectList) {
       }
     });
     return (idArray);
+  } else {
+    return ([]);
   };
 }
