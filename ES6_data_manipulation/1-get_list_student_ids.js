@@ -4,9 +4,7 @@ export default function getListStudentIds(objectList) {
       if (object.id) {
         return object.id;
       }
-    })
+    });
     return (idArray);
-  } else {
-    return ([])
   }
-}
+};
